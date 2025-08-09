@@ -29,6 +29,7 @@ A **professional-grade** Chrome extension featuring **sidebar drawing** and **we
 - **One-click activation** from the sidebar panel
 
   <img width="1208" height="785" alt="Screenshot 2025-08-09 193508" src="https://github.com/user-attachments/assets/00f6fc2b-2f59-4345-a4d2-887bf0def60f" />
+  <img width="1145" height="658" alt="Screenshot 2025-08-09 195129" src="https://github.com/user-attachments/assets/cb31db62-552c-4fd9-9dfe-ee71e11f5d76" />
 
 
 ### 🎨 **Advanced Drawing Tools**
