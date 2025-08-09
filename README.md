@@ -18,6 +18,8 @@ A **professional-grade** Chrome extension featuring **sidebar drawing** and **we
 - **Infinite canvas** with pan and zoom capabilities
 - **Persistent workspace** that stays with you across all tabs
 
+  <img width="1913" height="858" alt="Screenshot 2025-08-09 192827" src="https://github.com/user-attachments/assets/a7827bda-9376-4840-8666-8d59543f6024" />
+
 #### 🖊️ **Webpage Annotation Mode**
 
 - **Draw directly on any website** with overlay canvas
@@ -25,6 +27,9 @@ A **professional-grade** Chrome extension featuring **sidebar drawing** and **we
 - **Per-website storage** - annotations persist when you return
 - **Perfect for**: Web feedback, visual notes, markup, collaboration
 - **One-click activation** from the sidebar panel
+
+  <img width="1208" height="785" alt="Screenshot 2025-08-09 193508" src="https://github.com/user-attachments/assets/00f6fc2b-2f59-4345-a4d2-887bf0def60f" />
+
 
 ### 🎨 **Advanced Drawing Tools**
 
@@ -163,13 +168,6 @@ A **professional-grade** Chrome extension featuring **sidebar drawing** and **we
 - **Memory optimization** with history limits
 - **Smooth interactions** with debounced saving
 
-### **Compatibility**
-
-- **Chrome 114+** (Side Panel API)
-- **Chromium browsers** (Edge, Brave, Opera)
-- **High-DPI displays** fully supported
-- **Touch devices** with full gesture support
-
 ### **Storage**
 
 - **Chrome Storage API** for persistence
@@ -209,13 +207,6 @@ A **professional-grade** Chrome extension featuring **sidebar drawing** and **we
 - **Canvas settings**: Background color, grid options
 - **Auto-save frequency**: Customize save intervals
 
-### **Export Options**
-
-- **PNG export** with transparent background
-- **Automatic cropping** to content bounds
-- **High-resolution output** for print quality
-- **Batch export** (coming soon)
-
 
 ## 🐛 **Troubleshooting**
 
@@ -233,31 +224,11 @@ A **professional-grade** Chrome extension featuring **sidebar drawing** and **we
 - **Close unused tabs** with active draw-on-page mode
 - **Restart Chrome** if experiencing lag
 
-## 🔄 **Updates & Roadmap**
-
-### **Recent Improvements**
-
-- ✅ **Ultra-smooth drawing** with curve interpolation
-- ✅ **Professional color palette** with 8 quick colors
-- ✅ **Object selection and editing** system
-- ✅ **Canvas pan and zoom** with infinite canvas
-- ✅ **Tool-specific size memory**
-- ✅ **Advanced UI** with professional styling
-
-### **Coming Soon**
-
-- 🔄 **Shape fill options** (solid, gradient, pattern)
-- 🔄 **Layer system** for complex drawings
-- 🔄 **Collaboration features** (real-time sharing)
-- 🔄 **Template library** (grids, charts, diagrams)
-- 🔄 **Vector export** (SVG format)
-- 🔄 **Mobile app** companion
 
 ## 📄 **License**
 
 This project is open source and available under the MIT License.
 
-## 🙏 **Credits**
 
 Built with modern web technologies and Chrome Extension APIs. Inspired by professional drawing applications and designed to match the functionality of webwhiteboard.com while providing superior integration with your browsing experience.
 
