@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebWhiteboard+ - Side Panel</title>
+    <link rel="stylesheet" href="whiteboard.css">
+</head>
+<body>
+    <div class="sidepanel-container">
+        
+        <!-- Top toolbar -->
+        <div class="top-toolbar">
+            <div class="toolbar-group">
+                <button class="top-tool-btn active" id="select-tool" title="Select Tool">
+                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M1 1l4 13 3-8 8-3L1 1z" fill="currentColor"/></svg>
+                </button>
+                <button class="top-tool-btn" id="pen-tool" title="Pen Tool">
+                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" fill="currentColor"/></svg>
+                </button>
+                <div class="shapes-dropdown">
+                    <button class="top-tool-btn" id="shapes-btn" title="Shapes">
+                        <svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                        <svg width="8" height="8" viewBox="0 0 8 8" class="dropdown-arrow"><path d="M2 3l2 2 2-2z" fill="currentColor"/></svg>
+                    </button>
+                    <div class="shapes-menu" id="shapes-menu">
+                        <button class="shape-option" id="rectangle-tool" data-tool="rectangle">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Rectangle</span>
+                        </button>
+                        <button class="shape-option" id="circle-tool" data-tool="circle">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Circle</span>
+                        </button>
+                        <button class="shape-option" id="line-tool" data-tool="line">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 14l12-12" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <span>Line</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="top-tool-btn" id="text-tool" title="Text">
+                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M5.5 2a.5.5 0 0 0 0 1h1.09L5.09 14H4a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6.91L8.41 3h1.09a.5.5 0 0 0 0-1H5.5z" fill="currentColor"/></svg>
+                </button>
+                <button class="top-tool-btn" id="eraser-tool" title="Eraser">
+                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414l-3.879-3.879zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z" fill="currentColor"/></svg>
+                </button>
+            </div>
+            
+            <div class="toolbar-divider"></div>
+            
+            <div class="toolbar-group">
+                <button class="top-tool-btn" id="undo-btn" title="Undo">
+                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" fill="currentColor"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" fill="currentColor"/></svg>
+                </button>
+                <button class="top-tool-btn" id="redo-btn" title="Redo">
+                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" fill="currentColor"/><path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966a.25.25 0 0 1 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" fill="currentColor"/></svg>
+                </button>
+                <button class="top-tool-btn" id="clear-btn" title="Clear Canvas">
+                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" fill="currentColor"/></svg>
+                </button>
+            </div>
+
+            <div class="toolbar-group" style="margin-left:auto;">
+                <button class="top-tool-btn" id="draw-on-page-btn" title="Draw on this page">
+                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 2h12v9H9.5L6 14.5V11H2z" fill="currentColor"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Color panel -->
+        <div class="color-panel top-panel" id="color-panel" style="display: none;">
+            <div class="color-section">
+                <div class="color-header">
+                    <div class="thickness-control">
+                        <span class="thickness-dot" style="width: 4px; height: 4px;"></span>
+                        <input type="range" id="size-slider" min="1" max="20" value="2" class="thickness-slider">
+                        <span class="thickness-label">Thickness</span>
+                    </div>
+                </div>
+                
+                <div class="brand-colors">
+                    <h4>Brand colors</h4>
+                    <button class="add-colors-btn">+ Add colors</button>
+                </div>
+                
+                <div class="all-colors">
+                    <h4>All colors</h4>
+                    <div class="color-grid">
+                        <!-- Yellow row -->
+                        <div class="color-swatch" data-color="#F5E6A3" style="background-color: #F5E6A3;"></div>
+                        <div class="color-swatch" data-color="#F4D03F" style="background-color: #F4D03F;"></div>
+                        <div class="color-swatch" data-color="#D68910" style="background-color: #D68910;"></div>
+                        <div class="color-swatch empty" data-color="#FFFFFF" style="background-color: #FFFFFF; border: 1px solid #ddd;"></div>
+                        
+                        <!-- Orange row -->
+                        <div class="color-swatch" data-color="#F8C471" style="background-color: #F8C471;"></div>
+                        <div class="color-swatch" data-color="#E67E22" style="background-color: #E67E22;"></div>
+                        <div class="color-swatch" data-color="#A04000" style="background-color: #A04000;"></div>
+                        <div class="color-swatch" data-color="#D5D8DC" style="background-color: #D5D8DC;"></div>
+                        
+                        <!-- Red row -->
+                        <div class="color-swatch" data-color="#F1948A" style="background-color: #F1948A;"></div>
+                        <div class="color-swatch" data-color="#E74C3C" style="background-color: #E74C3C;"></div>
+                        <div class="color-swatch" data-color="#922B21" style="background-color: #922B21;"></div>
+                        <div class="color-swatch" data-color="#85929E" style="background-color: #85929E;"></div>
+                        
+                        <!-- Green row -->
+                        <div class="color-swatch" data-color="#82E0AA" style="background-color: #82E0AA;"></div>
+                        <div class="color-swatch" data-color="#27AE60" style="background-color: #27AE60;"></div>
+                        <div class="color-swatch" data-color="#1E8449" style="background-color: #1E8449;"></div>
+                        <div class="color-swatch" data-color="#566573" style="background-color: #566573;"></div>
+                        
+                        <!-- Blue row -->
+                        <div class="color-swatch" data-color="#85C1E9" style="background-color: #85C1E9;"></div>
+                        <div class="color-swatch" data-color="#3498DB" style="background-color: #3498DB;"></div>
+                        <div class="color-swatch" data-color="#1B4F72" style="background-color: #1B4F72;"></div>
+                        <div class="color-swatch active" data-color="#000000" style="background-color: #000000;">
+                            <svg width="12" height="12" viewBox="0 0 12 12" style="color: white;">
+                                <path d="M10 3L4.5 8.5 2 6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- Purple row -->
+                        <div class="color-swatch" data-color="#BB8FCE" style="background-color: #BB8FCE;"></div>
+                        <div class="color-swatch" data-color="#8E44AD" style="background-color: #8E44AD;"></div>
+                        <div class="color-swatch" data-color="#6C3483" style="background-color: #6C3483;"></div>
+                        <div class="color-swatch add-color">
+                            <input type="color" id="color-picker" value="#000000" style="opacity: 0; position: absolute;">
+                            <span style="font-size: 18px; color: #999;">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Eraser size panel -->
+        <div class="eraser-panel top-panel" id="eraser-panel" style="display: none;">
+            <div class="thickness-control">
+                <span class="thickness-dot" id="eraser-dot" style="width: 8px; height: 8px;"></span>
+                <input type="range" id="eraser-size-slider" min="5" max="50" value="20" class="thickness-slider">
+                <span class="thickness-label">Size</span>
+            </div>
+        </div>
+        
+        <!-- Selection Info -->
+        <div class="selection-info" id="selection-info">
+            <span id="selection-count">0</span> objects selected
+            <div class="selection-controls">
+                <button class="toolbar-button" id="delete-selected-btn" title="Delete Selected">
+                    <span class="tool-icon">🗑️</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="sidepanel-content">
+            <div class="whiteboard-container" id="canvas-container">
+                <canvas id="whiteboard-canvas" class="whiteboard-canvas"></canvas>
+            </div>
+        </div>
+        
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-item">
+                <span id="tool-status">Pen Tool</span>
+            </div>
+            <div class="status-item">
+                <span id="object-count">0 objects</span>
+            </div>
+            <div class="status-item">
+                <span id="canvas-position">0, 0</span>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="whiteboard.js"></script>
+    <script src="sidepanel.js"></script>
+</body>
+</html>

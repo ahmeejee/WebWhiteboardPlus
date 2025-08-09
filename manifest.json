@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "WebWhiteboard+",
+  "version": "1.0",
+  "description": "Draw anywhere - in side panel or directly on any webpage with annotation mode.",
+  "permissions": ["storage", "activeTab", "sidePanel", "scripting", "tabs"],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/LogoPNG.png",
+      "48": "icons/LogoPNG.png",
+      "128": "icons/LogoPNG.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["whiteboard.js", "draw-on-page.js"],
+      "css": ["whiteboard.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
