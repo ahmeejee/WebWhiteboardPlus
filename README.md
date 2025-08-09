@@ -1,4 +1,4 @@
-# WebWhiteboard+ v1.0 - Professional Chrome Extension
+# WebWhiteboard+ v1.0 - Chrome Extension
 
 A **professional-grade** Chrome extension featuring **sidebar drawing** and **webpage annotation** capabilities. Transform any website into your canvas with two powerful modes: **Side Panel Whiteboard** for dedicated drawing workspace and **Webpage Annotation Mode** for drawing directly on any web page. Draw anywhere, anytime with **smooth curves**, **object selection**, **canvas panning**, and **professional tools**!
 
