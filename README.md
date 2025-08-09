@@ -215,20 +215,6 @@ A **professional-grade** Chrome extension featuring **sidebar drawing** and **we
 - **High-resolution output** for print quality
 - **Batch export** (coming soon)
 
-## 🆚 **Comparison with webwhiteboard.com**
-
-| Feature                 | WebWhiteboard+ v1.0      | webwhiteboard.com |
-| ----------------------- | ------------------------ | ----------------- |
-| **Smooth Drawing**      | ✅ Advanced curves       | ✅ Basic          |
-| **Object Selection**    | ✅ Full editing          | ✅ Basic          |
-| **Canvas Pan/Zoom**     | ✅ Infinite canvas       | ✅ Limited        |
-| **Tool Memory**         | ✅ Individual sizes      | ❌ Global only    |
-| **Quick Colors**        | ✅ 8 + custom            | ✅ Limited        |
-| **Offline Mode**        | ✅ Full offline          | ❌ Online only    |
-| **Website Integration** | ✅ Draw on any page      | ❌ Separate site  |
-| **Multi-mode Access**   | ✅ 2 powerful modes      | ❌ Single mode    |
-| **Keyboard Shortcuts**  | ✅ Full set              | ❌ Limited        |
-| **High-DPI Support**    | ✅ Crisp on all displays | ❌ Basic          |
 
 ## 🐛 **Troubleshooting**
 
